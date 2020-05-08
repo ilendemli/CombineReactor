@@ -1,0 +1,16 @@
+PODS:
+  - WeakMapTable (1.1.0)
+
+DEPENDENCIES:
+  - WeakMapTable (~> 1.1)
+
+SPEC REPOS:
+  trunk:
+    - WeakMapTable
+
+SPEC CHECKSUMS:
+  WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
+
+PODFILE CHECKSUM: 323f73fe17857ea1ad5389a8bc9af54c5c14331e
+
+COCOAPODS: 1.9.1
