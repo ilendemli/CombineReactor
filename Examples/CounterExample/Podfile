@@ -1,0 +1,10 @@
+platform :ios, '13.0'
+use_frameworks!
+
+target 'CounterExample' do
+  pod 'CombineReactor'
+
+  target 'CounterExampleTests' do
+    inherit! :search_paths
+  end
+end

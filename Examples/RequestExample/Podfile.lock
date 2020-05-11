@@ -1,0 +1,22 @@
+PODS:
+  - CombineReactor (0.1):
+    - CombineReactor/Core (= 0.1)
+  - CombineReactor/Core (0.1):
+    - WeakMapTable (~> 1.1)
+  - WeakMapTable (1.1.0)
+
+DEPENDENCIES:
+  - CombineReactor
+
+SPEC REPOS:
+  trunk:
+    - CombineReactor
+    - WeakMapTable
+
+SPEC CHECKSUMS:
+  CombineReactor: 8e4cfcd67d79aad90f1dc1d3e2414d84f1d6dfd1
+  WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
+
+PODFILE CHECKSUM: a672296c75bcee140895a5746cce3f7888854f47
+
+COCOAPODS: 1.9.1
