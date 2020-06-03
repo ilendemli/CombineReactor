@@ -38,3 +38,12 @@ extension Publisher {
         }, receiveValue: { (_) in })
     }
 }
+
+@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+extension Publisher where Self.Failure == Never {
+    public func send(to subject: PassthroughSubject<Output, Never>) -> AnyCancellable {
+        sink { (value) in
+            subject.send(value)
+        }
+    }
+}
