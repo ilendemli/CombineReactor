@@ -2,8 +2,8 @@ import Foundation
 import Combine
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension Publisher where Self.Failure == Never {
-    public func bind(to target: Binder<Self.Output>) -> AnyCancellable {
+extension Publisher where Failure == Never {
+    public func bind(to target: Binder<Output>) -> AnyCancellable {
         sink { (value) in
             target.on(value)
         }
@@ -11,8 +11,8 @@ extension Publisher where Self.Failure == Never {
 }
 
 @available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-extension Publisher where Self.Failure == Error {
-    public func bind(to target: Binder<Self.Output>) -> AnyCancellable {
+extension Publisher where Failure == Error {
+    public func bind(to target: Binder<Output>) -> AnyCancellable {
         sink(receiveError: { (error) in
             #if DEBUG
             fatalError(error.localizedDescription)
