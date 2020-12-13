@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "CombineReactor"
-  s.version = "0.2"
+  s.version = "0.2.0"
   s.summary = "A wrapper for Combine, inspired by ReactorKit"
   s.homepage = "http://ilendemli.info"
   s.license = {
